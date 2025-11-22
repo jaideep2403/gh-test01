@@ -4,8 +4,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  hello:
+  hello-bash:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - run: echo "Hello World"
+
+  hello-python:
+    runs-on: ubuntu-latest
+    steps:
+      - run: print("Hello World!")
+
+      
