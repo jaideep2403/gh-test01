@@ -13,5 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: print("Hello World!")
+        shell: python
 
       
